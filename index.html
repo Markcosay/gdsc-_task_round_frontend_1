@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Space Shuttles</title>
+</head>
+<body>
+    <video autoplay loop muted plays-inline id="myVideo">
+        <source src="media/bg.webm" type="video/mp4">
+      </video>
+      <div class="title">
+        Space Shuttles
+    </div>
+
+    <div class="main-card">
+        
+        
+        <div class="top">
+            <div class="top-left">
+                
+                <i class="fa fa-space-shuttle" style="font-size:24px"></i>
+                Space shuttles
+
+            </div>
+            <div class="header">
+                <ul>
+                    <i><a>Development</i></a>
+                    <i><a>Budget</i></a>
+                    <i><a>History</i></a>
+                    <i><a>Future</i></a>
+                </ul>
+
+            </div>
+            <div class="top-right">
+                <button> Know More</button>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid-left">
+                <div class="mid-text">
+                    Learn, Innovate
+                    <br>
+                    and Launch
+
+
+                </div>
+                <button> Know More</button>
+                <div class="rating">
+
+                </div>
+            </div>
+                <div class="container">
+                    <div class="panel " id="panel-1">
+                        <h3>Columbia</h3>
+                        <h5>U.S.A.    1981</h5>
+                        <h6>First Space Shuttle, launched in 1981, marking the beginning of the Space Shuttle program.</h6>
+                    </div>
+                    <div class="panel " id="panel-2">
+                        <h3>Discovery</h3>
+                        <h5>U.S.A.    1984</h5>
+                        <h6>
+                            Multiple missions, including the deployment of the Hubble Space Telescope and the return-to-flight mission after the Challenger disaster.
+                        </h6>
+                    </div>
+                    <div class="panel " id="panel-3">
+                        <h3>Buran</h3>
+                        <h5>Russia    1998</h5>
+                        <h6>Soviet space shuttle, flew only once (unmanned) in 1988 before the program was discontinued.</h6>
+                    </div>
+                </div>
+            
+
+            
+        </div>
+
+    </div>
+    <script>
+        var video = document.getElementById("myVideo");
+        video.playbackRate = 2.5;
+
+        let panelsElement = document.querySelectorAll('.panel');
+    
+    panelsElement.forEach(panel => {
+        panel.addEventListener('mouseover', () => {
+            panelsElement.forEach(p => {
+                p.classList.remove('active');
+            });
+            panel.classList.add('active');
+        });
+    });
+    </script>
+    
+</body>
+</html>

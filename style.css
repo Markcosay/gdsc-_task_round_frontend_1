@@ -1,0 +1,211 @@
+  @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@800&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Trispace:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0; 
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .title{
+    font-size: 10vh;
+    color: aliceblue;
+    font-family: 'Trispace', sans-serif;
+  }
+
+.main-card{
+    background: rgba(252, 252, 252, 0.221);
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+    color: white;
+}
+
+.top-left{
+    margin: 3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fa{
+    transform: rotate(-45deg);
+}
+.header{
+    word-spacing: 5vw;
+    height: 4vh;
+    width: 8vw;
+    display: contents;
+    text-align: center;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    height: 3vh;
+    width: 7vw;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;;
+}
+.top{
+    display: inline-flex;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5vw;
+}
+.mid{
+    height: 25vh;
+    width: 40vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 12vh;
+    display: inline-flex;
+}
+.mid-text{
+    margin-left: 15vw;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.mid button{
+    margin-left: 15vw;
+    width: 8vw;
+    height: 6vh;
+    font-size: 1.2vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 12vh;
+    margin-left: 12vw;
+}
+.panel{
+    width: 10vw;
+    height: 50vh;
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+    border-radius: 10px;
+    flex: 1;
+    background: white no-repeat scroll center;
+    transition: all 0.5s linear;
+    filter: grayscale(1);
+    position: relative;
+}
+.panel h3{
+    position: absolute;
+    color: white;
+    font-size: 4vh;
+    transform: rotate(-90deg);
+    transition: all 0.5s linear;
+}
+
+#panel-1 h3{
+    left: -4vh;
+    bottom: 8vh;
+}
+#panel-2 h3{
+    left: -4vh;
+    bottom: 8vh;
+}
+#panel-3 h3{
+    left: 0vh;
+    bottom: 8vh;
+}
+
+
+.panel h6{
+    visibility: hidden;
+}
+.active{
+    flex: 4;
+    filter: grayscale(0);
+}
+.active h3{
+    transform: rotate(0deg);
+    text-shadow: 0 0 3px black;
+}
+
+
+#panel-1.active h3 {
+    margin-left: 4vw;
+}
+
+#panel-2.active h3 {
+    margin-left: 4vw;
+}
+
+#panel-3.active h3 {
+    margin-left: 5vh;
+}
+
+.active h6{
+    margin-top: 35vh;
+    visibility: visible;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+#panel-1{ 
+    background-image: url("media/1.jpg");
+    background-repeat:no-repeat ;
+    background-size: auto 50vh;
+}
+#panel-2{ background-image: url("media/2.jpg");
+    background-repeat:no-repeat ;
+    background-size: auto 50vh;
+}
+#panel-3{ background-image: url("media/3.jpg");
+    background-repeat:no-repeat ;
+    background-size: auto 50vh;
+
+}
+  #myVideo{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    size:auto;
+  }
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.top-left {
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.top-right {
+    text-align: right;
+}
+a:hover{
+    color:red;
+}
+button{
+    font-family: 'Bebas Neue', sans-serif;
+    transition: all 0.5s;
+}
+button:hover{
+background-color: transparent;
+color: red;
+border-color: transparent;
+}
